@@ -38,8 +38,8 @@ CREATE TABLE matches (
 
 CREATE VIEW standings AS
 SELECT p.id as id, p.name,
-(SELECT COUNT(*) FROM matches WHERE p.id = matches.winner) as won,
+(SELECT COUNT(*) FROM matches WHERE p.id = matches.winner) as won_count,
 (SELECT COUNT(*) FROM matches WHERE p.id in (winner, loser)) as played
 FROM players p
 GROUP BY p.id
-ORDER BY won DESC;
+ORDER BY won_count DESC;

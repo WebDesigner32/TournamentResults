@@ -125,7 +125,7 @@ def playerStandings():
     sorted by descending wins.
     """
 
-    cursor.execute("SELECT * FROM standings ORDER BY won DESC")
+    cursor.execute("SELECT * FROM standings ORDER BY won_count DESC")
 
     # Fetches the result and stores it in stand_results.
 
@@ -191,7 +191,7 @@ def swissPairings():
     round of a match.
     """
 
-    cursor.execute("SELECT * FROM standings ORDER BY won DESC")
+    cursor.execute("SELECT * FROM standings ORDER BY won_count DESC")
 
     # Fetches the result and stores it in stand_results.
 
