@@ -6,7 +6,7 @@ To have a Python module that uses the PostgreSQL database to track players and m
 
 ##**How to Obtain Code**
 
-Assuming you are at my TournamentResults repo on Github, click the Download ZIP button on the aside panel to obtain my code.
+Assuming you are at my TournamentResults repo on Github, https://github.com/WebDesigner32/TournamentResults, click the Download ZIP button on the aside panel to obtain my code.
 
 ##**Technology Requirements**
 
