@@ -203,7 +203,7 @@ def swissPairings():
 
     """
     Groups the results from stand_results into pairs by ranking in descending
-    order, then appends to pairs.
+    order, then appending to pairs.
     """
 
     for x in range(0, len(stand_results) - 1, 2):
