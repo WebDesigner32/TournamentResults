@@ -17,11 +17,14 @@ Assuming you are at my TournamentResults repo on Github, click the Download ZIP 
 
 ##**How to Run Code**
 
-1. Enter psql in the PostgreSQL shell.
+1. Start Terminal and have vagrant folder in path at end.
 
-2. Enter \i tournament.sql.
+2. Enter `vagrant up` and then enter `vagrant ssh`.
 
-3. Enter \q to leave the PostgreSQL shell.
+3. Enter `cd /vagrant/tournament`.
 
-4. Enter python tournament_test.py to run tournament_test.py. This will check the validity of the project.
+4. Enter `psql` and then enter `\i tournament.sql`.
 
+5. Enter `\q` to quit.
+
+6. Finally, enter `python tournament_test.py` to run the unit tests!

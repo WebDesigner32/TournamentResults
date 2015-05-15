@@ -14,7 +14,7 @@ def connect():
 def deleteMatches():
     """Remove all the match records from the database."""
 
-    # To connect to the database and establish a cursor.
+    # Connects to the database and establishes a cursor.
 
     conn = connect()
     cursor = conn.cursor()
@@ -32,7 +32,7 @@ def deleteMatches():
 def deletePlayers():
     """Remove all the player records from the database."""
 
-    # Connects to the database and establish a cursor.
+    # Connects to the database and establishes a cursor.
 
     conn = connect()
     cursor = conn.cursor()
@@ -50,7 +50,7 @@ def deletePlayers():
 def countPlayers():
     """Returns the number of players currently registered."""
 
-    # Connects to the database and establish a cursor.
+    # Connects to the database and establishes a cursor.
 
     conn = connect()
     cursor = conn.cursor()
@@ -115,7 +115,7 @@ def playerStandings():
         matches: the number of matches the player has played
     """
 
-    # Connects to the database and establish a cursor.
+    # Connects to the database and establishes a cursor.
 
     conn = connect()
     cursor = conn.cursor()
@@ -147,7 +147,7 @@ def reportMatch(winner, loser):
       loser:  the id number of the player who lost
     """
 
-    # Connects to the database and establish a cursor.
+    # Connects to the database and establishes a cursor.
 
     conn = connect()
     cursor = conn.cursor()
@@ -181,7 +181,7 @@ def swissPairings():
         name2: the second player's name
     """
 
-    # Connects to the database and establish a cursor.
+    # Connects to the database and establishes a cursor.
 
     conn = connect()
     cursor = conn.cursor()
@@ -191,7 +191,7 @@ def swissPairings():
     round of a match.
     """
 
-    cursor.execute("SELECT * FROM standings ORDER BY wins DESC")
+    cursor.execute("SELECT * FROM standings ORDER BY won DESC")
 
     # Fetches the result and stores it in stand_results.
 
@@ -202,7 +202,7 @@ def swissPairings():
     pairs = []
 
     """
-    Groups the results from stand_result into pairs by ranking in descending
+    Groups the results from stand_results into pairs by ranking in descending
     order, then appends to pairs.
     """
 
