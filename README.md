@@ -2,7 +2,7 @@
 
 ##**Purpose of Project**
 
-To have a Python module that uses the PostgreSQL database to track players and matches from a Swiss style tournament. This involves "defining the database schema (SQL table definitions), and writing code that will use it to track a Swiss tournament."
+To have a Python module that uses the PostgreSQL database to track players and matches from a Swiss style tournament. This involves, "...defining the database schema (SQL table definitions), and writing code that will use it to track a Swiss tournament."
 
 ##**How to Obtain Code**
 
