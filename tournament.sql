@@ -34,7 +34,7 @@ CREATE TABLE matches (
   loser INTEGER REFERENCES players(id)
 );
 
--- Creates view for matches played that is sorted by won count.
+-- Creates view for matches played that is sorted by win count.
 
 CREATE VIEW standings AS
 SELECT p.id as id, p.name,
