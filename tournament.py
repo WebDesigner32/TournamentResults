@@ -84,7 +84,7 @@ def registerPlayer(name):
       name: the player's full name (need not be unique).
     """
 
-    # Connects to the database and establish a cursor.
+    # Connects to the database and establishes a cursor.
 
     conn = connect()
     cursor = conn.cursor()
@@ -125,7 +125,7 @@ def playerStandings():
     sorted by descending wins.
     """
 
-    cursor.execute("SELECT * FROM standings ORDER BY won_count DESC")
+    cursor.execute("SELECT * FROM standings ORDER BY win_count DESC")
 
     # Fetches the result and stores it in stand_results.
 
@@ -191,7 +191,7 @@ def swissPairings():
     records in descending order.
     """
 
-    cursor.execute("SELECT * FROM standings ORDER BY won_count DESC")
+    cursor.execute("SELECT * FROM standings ORDER BY win_count DESC")
 
     # Fetches the result and stores it in stand_results.
 
