@@ -26,7 +26,7 @@ CREATE TABLE players (
   name TEXT
 );
 
--- Creates table called matches with Foreign Keys to the players table.
+-- Creates table called matches with Foreign Keys to players.id.
 
 CREATE TABLE matches (
   id SERIAL PRIMARY KEY,
