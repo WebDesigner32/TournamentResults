@@ -187,8 +187,8 @@ def swissPairings():
     cursor = conn.cursor()
 
     """
-    Executes an SQL command that gets a list of pairs of players for the next
-    round of a match.
+    Executes an SQL command that gets player standings and ranks their win
+    records in descending order.
     """
 
     cursor.execute("SELECT * FROM standings ORDER BY won_count DESC")
@@ -203,7 +203,7 @@ def swissPairings():
 
     """
     Groups the results from stand_results into pairs by ranking in descending
-    order, then appending to pairs.
+    order, then appends to pairs.
     """
 
     for x in range(0, len(stand_results) - 1, 2):
